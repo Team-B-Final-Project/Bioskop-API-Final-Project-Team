@@ -72,7 +72,7 @@ public class SeatsController {
         logger.info("Create seats "+seats);
         logger.info("-----------------------------------");
         ResponseHandler.generateResponse("Successfully Create Seats!", HttpStatus.OK, seats);
-        return "redirect:/crud/seats";
+        return "redirect:/crud/seats/1";
         }catch (Throwable err){
             model.addAttribute("error", err.getMessage());
             model.addAttribute("errorStatus", HttpStatus.BAD_REQUEST);
