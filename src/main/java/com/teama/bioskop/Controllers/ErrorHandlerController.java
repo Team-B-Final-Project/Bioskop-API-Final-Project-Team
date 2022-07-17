@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class ErrorHandlerController implements ErrorController {
 
 
-	@RequestMapping("/error")
-	@ResponseBody
-	public String getErrorPath() {
-		return "<center><h1>Something went wrong</h1></center>";
-	}
+    @RequestMapping("/error")
+    @ResponseBody
+    public String getErrorPath() {
+        return "<center><h1>Something went wrong</h1></center>";
+    }
 }
